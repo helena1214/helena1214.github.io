@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global_value_v3.0.css">
+    <link rel="stylesheet" href="styles/project_mobile_v.3.0.css" media="screen and (max-width: 576px)">
+    <link rel="stylesheet" href="styles/project_web_v3.0.css" media="screen and (min-width: 576px)">
+    <title>Helena WONG COOKbook project</title>
+  
+</head>
+<style>
+    .progressbar,.NavigationActive,.sidebarsubitemActive{
+        color: #14213d;
+    }
+    .PrototypeButton{
+        background-color: #14213d;
+    }
+</style>
+<body>
+    <header id="header">
+        <a href="index.html" id="Logo">Helena WONG<a>
+        <a href="aboutme.html" id="About">About Me<a>
+        <div class="ApplinksContainer">
+            <a href="https://github.com/helena1214" title="Helena's Github" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"></path>
+            </svg></a>
+
+            <a href="https://www.linkedin.com/in/wongtszkwanhelena/" title="Helena's Linkedin" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+                </svg></a>
+
+            <a href="mailto:tszkwan1214@gmail.com" title="Mail to Helena" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg></a>
+        </div>
+        <button onclick="openmenuFunction()"><svg id="menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></button>
+    </header>
+
+    <div class="bannerbox">
+        <img class="Projectheroimage" src="assests/COOKbook/the COOKbook heroimage.png">
+        <div class="banner">
+            <h1>COOKbook</h1>
+            <p>Design a cross-platform recipe site for food-allergy need population.</p>
+            <a href="https://www.figma.com/proto/qq8eRQhqHdfHl7YhSj3yWv/Design-a-cross-platform-recipe-site-for-food-allergy-need?node-id=97%3A24021&scaling=min-zoom&page-id=97%3A24020&starting-point-node-id=97%3A24021" title="COOKbook prototype" target="_blank">
+                <button class="PrototypeButton">Try Prototype</button></a>
+        </div>
+    </div>
+
+    <h2> PROJECT OVERVIEW </h2>
+
+            <div class="projectoverviewgrid">
+                <div class="projectoverviewbox">
+                    <img src="assests/icons/info_black_24dp.svg">
+                    <a href="./index.html#overview"><h4>Project Background</h4></a>
+                    <p>After deciding the topic, I establish my role in the project and plan for the estimated project progress.</p>
+                </div>
+
+                <div class="projectoverviewbox">
+                    <img src="assests/icons/account_circle_black_24dp.svg">
+                    <a href="./index.html#userresearch"><h4>Understanding the User</h4></a>
+                    <p>I interview serval users & develop user story & problem statement in the persona of 2 users. Follow up with their User Journey maps. I also perform competitive audit to idenify potential competitions of our products.</p>
+                </div>
+
+                <div class="projectoverviewbox">
+                    <img src="assests/icons/design_services_black_24dp.svg">
+                    <a href="./index.html#ideation"><h4>Starting Design</h4></a>
+                    <p>Starting with competitive audits, I ideate the mainpage design. Then I start developing paper wireframes. Digital wireframes & low-fieldity prototype is then further develop & modify for a usability test.</p>
+                </div>
+
+                <div class="projectoverviewbox">
+                    <img src="assests/icons/tips_and_updates_black_24dp.svg">
+                    <a href="./index.html#refinedesign"><h4>Refining Design</h4></a>
+                    <p>According to the feedbacks form usbility test, I refine the design and add visual elements to produce mockup. Mockups are then converted to high-fieldity prototype.</p>
+                </div>
+            </div>
+
+        <div class="overviewintrogrid">
+            
+            <div class="overviewtextbox">
+                <div class="iconheadingbox">
+                    <img src="assests/icons/report_problem_black_24dp.svg">
+                    <h3> Challenge </h3>
+                </div>
+                <ul>
+                    <li><p>Food allergy populations are suffered from limited food and bervage choices, and they can hardly enjoy tasty food with others.</p></li>
+                    <li><p>The recipe site currently provide single food allergy filter instead of personalized filter, that they cannot find the recipe they need.</p></li>
+                </ul>
+            </div>
+
+            <div class="overviewtextbox">
+                <div class="iconheadingbox">
+                    <img src="assests/icons/task_alt_black_24dp.svg">
+                    <h3>Goal</h3>
+                </div>
+                <p>Design a cross-platform recipe site that provided specific aid to food allergy populations.</p>
+            </div>
+
+            <img class="overviewintroimg" src="assests/COOKbook/unsplash_2r8BzVYZIeo.png">
+        </div>
+       
+    <h2 id="userresearch">User Research</h2>
+    <div class="progressbar p25"></div>
+   
+        <div class="subheading">
+            <h3>User Persona & User Journey Map</h3>
+            <p>According to  our interviewees, Helen & Mrs Wong. I built up personas for them and established their problem statements. Then I map Helen & Mrs. Wong<span>&#39</span>s user journey to understand their experiences and opportunities for our design.</p>
+        </div>
+ 
+                <h5>HELEN'S JOURNEY</h5>
+                <div class="overflowbox">
+                    <img class="imagedisplay" src="assests/COOKbook/the COOKbook Helen Persona image.png">
+                    <img class="imagedisplay" src="assests/COOKbook/the COOKbook helen user journey image.png">
+                </div>
+
+            <div class="problemstatementbox">
+                <div class="iconheadingbox">
+                    <img src="assests/icons/report_problem_black_24dp.svg">
+                    <h3>Problem statement</h3>
+                </div>
+                <p>“Helen is a freelencer interested in cooking who need a way to filter recipes on internet becuase she want to search for suitable recipe in a fast and convenient way.”</p>
+            </div>
+
+                <h5>MRS. WONG'S JOURNEY</h5>
+                <div class="overflowbox">
+                    <img class="imagedisplay" src="assests/COOKbook/the COOKbook Mrs Wong journey persona image.png">
+                    <img class="imagedisplay" src="assests/COOKbook/the COOKbook Mrs Wong user journey image.png">
+                </div>
+ 
+            <div class="problemstatementbox">
+                <div class="iconheadingbox">
+                    <img src="assests/icons/report_problem_black_24dp.svg">
+                    <h3>Problem statement</h3>
+                </div>
+                <p>“Mrs. Wong is a busy mother who need a way to search for food-allergy specific recipe for her daughter becuase she wants to let her daughter try on more different food and have a balancing diet.”
+                </p>
+            </div>
+
+        <div class="subheading">
+            <h3>Competitive Audit</h3>
+            <p>I performed a competitive audit to idenify our product<span>&#39</span>s potential competitors, then learn & make improvements to our own design.</p>
+        </div>
+
+
+            <h5>indirect competitors</h5>
+                <div class="comparegrid">
+                    <img class="logoimage" src="assests/COOKbook/the COOKbook Kids with food allergies image.png">
+                    <h4>Kids with Food Allergies</h4>
+                    <p>Detail kids recipe & filters</p>
+                    
+                    <img class="logoimage" src="assests/COOKbook/the COOKbook RAISE image.png">
+                    <h4>RAISE</h4>
+                    <p>Powerful & highest variety of filters.</p>
+                </div>
+
+
+
+            <h5>direct competitors</h5>
+                <div class="comparegrid">
+                    <img class="logoimage" src="assests/COOKbook/the COOKbook Recipes- Allergic living image.png">
+                    <h4>Recipes - Allergic Living</h4>
+                    <p>Stylish layout & attracting recipes recommendations.</p>
+                    
+                    <img class="logoimage" src="assests/COOKbook/the COOKbook Yummly image.png">
+                    <h4>Yummly</h4>
+                    <p>Outstanding design and great UX for searching recipes.</p>
+                </div>
+
+            <div class="remarktext"> View 
+                <a href="https://docs.google.com/spreadsheets/d/1m1QSPKMblezxf1xieN4f_4F8th-QqKtUo9s6jJhwUSQ/edit?usp=sharing&resourcekey=0-IvrxvcA5V8jpGiK4ikFtbg" title="COOKbook Competitive audit" target="_blank">
+                Competitive Audit
+                </a>.
+            </div>
+        
+        
+
+    <h2 id="ideation">Ideation & Design</h2>
+    <div class="progressbar p50"></div>
+
+        <div class="subheading">
+            <h3>Mainpage Wireframe Ideation</h3>
+            <p>I ideated 5 random frontpage designs & picked the best part in each desgin to merge as the final design decision.</p>
+        </div>
+            <div class="imagetextdisplay">
+                    <img class="imagedisplay" src="assests/COOKbook/the COOKbook mainpage ideation image.png">
+                    <div class="remarktext">The yellow rectangle parts indicated the sections that are going to be included in next step of design.</div>
+            </div>
+
+        <div class="subheading">
+            <h3>Paper Wireframe</h3>
+            <p>After brainstorming, I draw a paper wireframe for the COOkbook <span>&#39</span>s mobile app frontpage which include the best from the brainstorming wireframes. </p>
+        </div>
+            <div class="overflowbox">
+                <img class="imagedisplay" src="assests/COOKbook/the COOKbook paper wireframes scroll.png">
+            </div>
+
+        <div class="subheading">
+            <h3>Digital Wireframes</h3>
+            <p>Continue the initial design process, I develop the digital wireframe and add new features that facilate user to distingush different parts on the front page .Then I develop the digital wireframes in Figma.</p>
+        </div>
+            <div class="imagedisplayflex"><img class="imagedisplay" src="assests/COOKbook/the COOKbook DIgital wireframe image.png"></div>
+
+        <div class="subheading">
+            <h3>Low-fidelity prototype</h3>
+            <p>This Low-Fidelity prototype briely show the user flow from frontpage, undergoing the registeration process, and finally reaching the mainpage.</p>
+        </div>
+            <div class="imagetextdisplay">
+                <img class="imagedisplay" src="assests/COOKbook/the COOKbook Lo-fi prototype image.png">
+                <div class="remarktext">View <u>the COOKbook (low-fidelity prototype)</u>.</div>
+            </div>
+
+        <div class="subheading">
+            <h3>Affinity graph</h3>
+            <p>I consturct affinity graph according to users<span>&#39</span> opinions in the usability study, then insights are idenified and draw out modification directions.</p>
+        </div>
+            <div class="imagetextdisplay">
+                <img class="imagedisplay" src="assests/COOKbook/the COOKbook affinity graph image.png">
+                <div class="remarktext">The Affinity graph constructed after first round of usability study.</div>
+            </div>
+
+        <div class="subheading">
+            <h3>Usability Study Findings</h3>
+            <p>An umoderated usbility study is performed to find out screens or userflow related problems. Findings are given out for second round of modifications.</p>
+        </div>
+
+            <div class="comparegrid">
+                <img class="logoimage" src="assests/icons/forum_black_24dp.svg">
+                <h4>Comment & Response</h4>
+                <p>Users want to comment & reponse to other users cooking experience on the recipe.</p>
+
+                <img class="logoimage" src="assests/icons/filter_alt_black_24dp.svg">
+                <h4>Filtering & Sorting</h4>
+                <p>Users want to have a more personalized, mix-and-match filtering systems when searching for new recipe or saved recipes.</p>
+
+                <img class="logoimage" src="assests/icons/settings_black_24dp.svg">
+                <h4>Setting</h4>
+                <p>Users would like to reach setting options in a more convient way.</p>
+            </div>
+
+
+
+    <h2 id="refinedesign">Refining Desgin</h2>
+    <div class="progressbar p75"></div>
+
+        <div class="subheading">
+            <h3>Mockups</h3>
+            <p>The mockups have tackled the problems that we discoverd in the usability study and adding with visual elements.</p>
+        </div>
+            <div class="comparegrid mobilegrid">
+                <img class="interfaceimage" src="assests/COOKbook/the COOKbook Mockups Commetn&Response image.png">
+                <h4>Comment & Response</h4>
+                <p>Users can leave comments on their cooking experiences and reply to others comments.</p>
+
+                <img class="interfaceimage" src="assests/COOKbook/the COOKbook Mockups Filtering&Sorting image.png">
+                <h4>Filtering & Sorting</h4>
+                <p>User can mix-and-match their allergy exclusion in the seraching filters, or pre-saved oersonalized excluded list for seaching.</p>
+
+                <img class="interfaceimage" src="assests/COOKbook/the COOKbook Mockups Setting image.png">
+                <h4>Setting</h4>
+                <p>Pop-out setting section allows user to reach setting options without leaving current page.</p>
+            </div>
+
+            <div class="carouselcontainer mobilegrid" onclick="rotate(0)">
+                <div class="carousel">
+                    <div class="carouselitem c1">
+                        <img class="interfaceimage" src="assests/COOKbook/the COOKbook Mockups Commetn&Response image.png">
+                        <h4>Comment & Response</h4>
+                        <p>Users can leave comments on their cooking experiences and reply to others comments.</p>
+                    </div>
+                    <div class="carouselitem c2">
+                        <img class="interfaceimage" src="assests/COOKbook/the COOKbook Mockups Filtering&Sorting image.png">
+                        <h4>Filtering & Sorting</h4>>
+                        <p>User can mix-and-match their allergy exclusion in the seraching filters, or pre-saved oersonalized excluded list for seaching.</p>
+                    </div>
+                    <div class="carouselitem c3">
+                        <img class="interfaceimage" src="assests/COOKbook/the COOKbook Mockups Setting image.png">
+                        <h4>Setting</h4>
+                        <p>Pop-out setting section allows user to reach setting options without leaving current page.</p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="subheading">
+            <h3>Screen sizes & Webapp responsive Mockups</h3>
+            <p>In the mockup phase, I also optimized the responsive design to each screens. I idenitied different features & user need in each devices and make fine tunnings.</p>
+        </div>
+
+            <div class="overflowbox">
+                <img class="imagedisplay" src="assests/COOKbook/the COOKbook responsive mockup scroll.png">    
+            </div>
+            
+
+        <div class="subheading">
+            <h3>High-fidelity prototype</h3>
+            <p>This high-fidelity prototype has tackled the problems that we discoverd in the usability study and adding with visual elements.</p>
+        </div>
+            <div class="imagetextdisplay">
+                <img class="imagedisplay" src="assests/COOKbook/the COOKbook hi-fi prototype image.png">
+                <div class="remarktext">View 
+                    <a href="https://www.figma.com/proto/qq8eRQhqHdfHl7YhSj3yWv/Design-a-cross-platform-recipe-site-for-food-allergy-need?node-id=97%3A24021&scaling=min-zoom&page-id=97%3A24020&starting-point-node-id=97%3A24021" title="COOKbook prototype" target="_blank">
+                    The COOKbook (High-fidelity prototype)
+                    </a>.
+                </div>
+            </div>
+
+
+
+    <h2>Solutions & Results</h2>
+    <div class="progressbar p95"></div>
+
+            <div class="comparegrid mobilegrid">
+                <img class="interfaceimage" src="assests/COOKbook/the COOKbook Solutions Personalize image.png">
+                <h4>Personalized Allergy list</h4>
+                <p>User can pre-save their allergy items and not need to repeat picking allergy filters in further searching.</p>
+
+                <img class="interfaceimage" src="assests/COOKbook/the COOKbook Solutions Allergy label image.png">
+                <h4>Allergy label</h4>
+                <p>All recipes will be labeled with potential allergy ingredient label, which can be easily identified in the seraching results interface.</p>
+
+                <img class="interfaceimage" src="assests/COOKbook/the COOKbook Solutions Save&Share image.png">
+                <h4>Save & Share</h4>
+                <p>Users can save recipes by clicking favourite button on the result page, and export the recipes to text or social media by clicking on sharing button.</p>
+            </div>
+
+            <div class="carouselcontainer mobilegrid" onclick="rotate(1)">
+                <div class="carousel">
+                    <div class="carouselitem c1">
+                        <img class="interfaceimage" src="assests/COOKbook/the COOKbook Solutions Personalize image.png">
+                        <h4>Personalized Allergy list</h4>
+                        <p>User can pre-save their allergy items and not need to repeat picking allergy filters in further searching.</p>
+                    </div>
+                    <div class="carouselitem c2">
+                        <img class="interfaceimage" src="assests/COOKbook/the COOKbook Solutions Allergy label image.png">
+                        <h4>Allergy label</h4>
+                        <p>All recipes will be labeled with potential allergy ingredient label, which can be easily identified in the seraching results interface.</p>
+                    </div>
+                    <div class="carouselitem c3">
+                        <img class="interfaceimage" src="assests/COOKbook/the COOKbook Solutions Save&Share image.png">
+                        <h4>Save & Share</h4>
+                        <p>Users can save recipes by clicking favourite button on the result page, and export the recipes to text or social media by clicking on sharing button.</p>
+                    </div>
+                </div>
+            </div>
+
+            <aside id="sidebar">
+                <button onclick="closemenuFunction()"><svg id="close"xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+                </svg></button>
+        
+                <div class="sidebarlinks">
+                    <a class="sidebaritem" href="aboutme.html">About Me</a>
+                    <a id="sidebarproject" class="sidebaritem" href="index.html">Projects</a>
+                    <a class="sidebarsubitem sidebarsubitemActive" href="project_cookbook.html">The COOKbook</a>
+                    <a class="sidebarsubitem" href="project_greenfingers.html">GreenFingers</a>
+                    <a class="sidebarsubitem" href="project_famidine.html">FamiDINE</a>
+                </div>
+        
+                    <div class="ApplinksContainer">
+                        <a href="https://github.com/helena1214" title="Helena's Github" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"></path>
+                        </svg></a>
+        
+                        <a href="https://www.linkedin.com/in/wongtszkwanhelena/" title="Helena's Linkedin" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+                            </svg></a>
+        
+                        <a href="mailto:tszkwan1214@gmail.com" title="Mail to Helena" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                <path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg></a>
+                    </div>
+            </aside>
+        
+            <button onclick="topFunction()"><svg id="topbutton" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/>
+                <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
+            </svg></button>
+        
+            <footer>
+                <div class="Navigationbox">
+                    <a href="index.html">All Projects</a>
+                    &bull;
+                    <a href="project_famidine.html">FamiDINE</a>
+                    &bull;
+                    <a href="project_greenfingers.html">GreenFingers</a>
+                    &bull;
+                    <a class="NavigationActive" href="project_cookbook.html">The COOKbook</a>
+                    &bull;
+                    <a href="aboutme.html">About Me</a>
+                </div>
+                    <p>Helena WONG  <span>&#169;</span> 2022. All rights reserved.</p>
+            </footer>
+        
+        <script>
+            topbutton = document.getElementById("topbutton")
+        
+            window.onscroll = function() {scrollFunction(); stickFunction()};
+                function scrollFunction() {
+                    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                        topbutton.style.display = "block";
+                    } else {
+                        topbutton.style.display = "none";
+                    }
+                }
+                function topFunction() {
+                    document.documentElement.scrollTop = 0;
+                }
+             
+        
+                function openmenuFunction() {
+                    document.getElementById("sidebar").style.width = "30vw";
+                    document.getElementById("sidebar").style.minWidth = "150px";
+                }
+        
+                function closemenuFunction() {
+                    document.getElementById("sidebar").style.width = "0px";
+                    document.getElementById("sidebar").style.minWidth = "0px";
+                }
+        
+                var navbar = document.getElementById("header");
+                var stick = navbar.offsetTop;
+        
+                function stickFunction(){
+                    if (window.pageYOffset >= stick){
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+        
+            
+        
+        
+            var currdeg = [0,0];
+            
+            function rotate(n){
+                var carousel = document.getElementsByClassName("carousel")[n];
+                currdeg[n] = currdeg[n] + 120;
+                carousel.style.transform = `rotateY(${currdeg[n]}deg)`; 
+            }
+            
+        
+            
+        
+        </script>
+        
+        
+        
+        </body>
+        </html>

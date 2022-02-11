@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global_value_v3.0.css">
+    <title>Helena WONG About me</title>
+</head>
+    <style>
+        .heroheading{
+            font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.25em;
+            letter-spacing: 0em;
+            color: white;
+            overflow-wrap: normal;
+
+            text-align: left;
+ 
+            padding-top: 116px;
+            padding-bottom: 116px;
+            padding-left: 12vw;
+            display: block;
+            margin: 60px 0 0 0;
+
+            background-image:url('assests/About Me/DSC04314 2.png');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .iconheadingbox{
+            display: flex;
+            flex-direction: row;
+            margin-top: 16px;
+        }
+        .iconheadingbox p{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.03em;
+            color: #444444;
+
+            margin: 0 0 0 12px;
+        }
+
+        .AboutmeSubtopic{
+            font-family: Roboto;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 56px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            grid-column: 1 / span 1;
+        }
+
+        .SubtopicContainer{
+            display: flex;
+            flex-direction: row;
+
+            margin: 48px 12vw 0;
+        }
+
+        .Subtopictext{
+            display: flex;
+            flex-direction: column;
+
+            grid-column: 2 / span 1 ;
+            width:50vw;
+
+        }
+        
+        .SkillGrid{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            row-gap: 1em;
+            column-gap: 2em;
+        }
+
+
+
+        .Skilltopic{
+            font-family: Roboto;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+            letter-spacing: 0.03em;
+            text-align: left;
+            text-transform: uppercase;
+            color: #535353;
+
+            grid-column: 1 /span 1;
+
+        }
+        .SkillGrid>p{
+            grid-column: 2 / span 1;
+            margin: 0 0;
+        }
+
+        p{
+            font-family: Noto Sans HK;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #535353;
+        }
+
+        .GridContainer{
+            display: grid;
+            grid-template-columns: 1fr 2fr ;
+            column-gap: 6vw ;
+            row-gap: 90px;
+
+            align-self: center;
+            margin: 48px 12vw 0;
+        }
+
+        .progressbar,.NavigationActive,.sidebarsubitemActive{
+            color: #408aa1;
+        }
+
+        @media (max-width:768px){
+            .AboutmeSubtopic{grid-column: 1 / span 2}
+            .Subtopictext{
+                grid-column: 1/ span 2;
+                width:100%;
+                margin-top: 1em;
+                margin-bottom: 120px;
+            }
+            .GridContainer{
+                row-gap: 24px;
+            }
+            .heroheading{
+                font-size: 7vw;
+            }
+            p{
+            font-family: 'Noto Sans HK', sans-serif;
+            font-size: 16px; 
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            color: #535353;
+            }
+        }
+        
+    </style>
+<body>
+    <header id="header">
+        <a href="index.html" id="Logo">Helena WONG<a>
+        <a href="aboutme.html" id="About">About Me<a>
+        <div class="ApplinksContainer">
+            <a href="https://github.com/helena1214" title="Helena's Github" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"></path>
+            </svg></a>
+
+            <a href="https://www.linkedin.com/in/wongtszkwanhelena/" title="Helena's Linkedin" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+                </svg></a>
+
+            <a href="mailto:tszkwan1214@gmail.com" title="Mail to Helena" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg></a>
+        </div>
+        <button onclick="openmenuFunction()"><svg id="menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></button>
+    </header>
+
+    <h1 class="heroheading"> Hi, I am Helena. <br> An UI/UX Designer.</h1>
+    <div class="GridContainer">
+        <div class="AboutmeSubtopic">About Me.</div>
+
+        <div class="Subtopictext">
+            <p>From a laboratory technician to a self-taught UI/UX designer, I am passionate to learn the latest design trends and willing to design the best product, which is the simplest one.<br><br> I enjoy cooking & making 3D interior design in free time. Now Living in Hong Kong with my 2 cats, Dim & Kit.</p>
+            <div class="iconheadingbox">
+                <img src="assests/icons/email_black_24dp.svg">
+                <p>tszkwan1214@gmail.com</p>
+            </div>
+        </div>
+    
+    
+        <div class="AboutmeSubtopic">Skills.</div>
+        <div class="Subtopictext">
+            <div class="SkillGrid">
+                <div class="Skilltopic">language</div>
+                <p>English · Chinese (Cantonese & Mandrian)</p>
+
+                <div class="Skilltopic">Ui Design</div>
+                <p>Figma · Abode XD ·  Zeplin · ProtoPie</p>
+
+                <div class="Skilltopic">Ux Research</div>
+                <p>Wireframing ·  Prototyping ·  Performing Usability Studies</p>
+
+                <div class="Skilltopic">Frontend</div>
+                <p>HTML ·  CSS ·  JavaScript</p>
+            </div>     
+            <div class="iconheadingbox">
+                <img src="assests/icons/file_download_black_24dp.svg">
+                <a href="https://drive.google.com/file/d/1tgoqEArwsbRznDkut8Aulx-CzMNfL63o/view?usp=sharing" title="Helena's Resume" target="_blank">
+                    <p>Download my Resume</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <aside id="sidebar">
+        <button onclick="closemenuFunction()"><svg id="close"xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+            <path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+        </svg></button>
+
+        <div class="sidebarlinks">
+            <a class="sidebaritem sidebarsubitemActive" href="aboutme.html">About Me</a>
+            <a id="sidebarproject" class="sidebaritem" href="index.html">Projects</a>
+            <a class="sidebarsubitem" href="project_cookbook.html">The COOKbook</a>
+            <a class="sidebarsubitem" href="project_greenfingers.html">GreenFingers</a>
+            <a class="sidebarsubitem" href="project_famidine.html">FamiDINE</a>
+        </div>
+
+            <div class="ApplinksContainer">
+                <a href="https://github.com/helena1214" title="Helena's Github" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"></path>
+                </svg></a>
+
+                <a href="https://www.linkedin.com/in/wongtszkwanhelena/" title="Helena's Linkedin" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+                    </svg></a>
+
+                <a href="https://twitter.com/HelenaWsims3" title="Helena's Twitter" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                        <path d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23z"></path>
+                    </svg></a>
+            </div>
+    </aside>
+
+    <button onclick="topFunction()"><svg id="topbutton" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/>
+        <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
+    </svg></button>
+
+    <footer>
+        <div class="Navigationbox">
+            <a href="index.html">All Projects</a>
+            &bull;
+            <a href="project_famidine.html">FamiDINE</a>
+            &bull;
+            <a href="project_greenfingers.html">GreenFingers</a>
+            &bull;
+            <a href="project_cookbook.html">The COOKbook</a>
+            &bull;
+            <a class="NavigationActive" href="aboutme.html">About Me</a>
+        </div>
+            <p>Helena WONG  <span>&#169;</span> 2022. All rights reserved.</p>
+    </footer>
+<script>
+    topbutton = document.getElementById("topbutton")
+
+    window.onscroll = function() {scrollFunction(); stickFunction();};
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                topbutton.style.display = "block";
+            } else {
+                topbutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.documentElement.scrollTop = 0;
+        }
+     
+        function openmenuFunction() {
+            document.getElementById("sidebar").style.width = "30vw";
+            document.getElementById("sidebar").style.minWidth = "150px";
+        }
+
+        function closemenuFunction() {
+            document.getElementById("sidebar").style.width = "0px";
+            document.getElementById("sidebar").style.minWidth = "0px";
+        }
+
+        var navbar = document.getElementById("header");
+        var stick = navbar.offsetTop;
+
+        function stickFunction(){
+            if (window.pageYOffset >= stick){
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        var currdeg = [0,0];
+    
+        function rotate(n){
+            var carousel = document.getElementsByClassName("carousel")[n];
+            currdeg[n] = currdeg[n] + 120;
+            carousel.style.transform = `rotateY(${currdeg[n]}deg)`; 
+        }
+</script>
+
+
+
+
+
+</body>
+</html>

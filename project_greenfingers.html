@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global_value_v3.0.css">
+    <link rel="stylesheet" href="styles/project_mobile_v.3.0.css" media="screen and (max-width: 576px)">
+    <link rel="stylesheet" href="styles/project_web_v3.0.css" media="screen and (min-width: 576px)">
+    <title>Helena WONG GreenFingers project</title>
+</head>
+<style>
+    .progressbar,.NavigationActive,.sidebarsubitemActive{
+        color: #72b01d;
+    }
+    .PrototypeButton{
+        background-color: #72b01d;
+    }
+</style>
+<body>
+    <header id="header">
+        <a href="index.html" id="Logo">Helena WONG<a>
+        <a href="aboutme.html" id="About">About Me<a>
+        <div class="ApplinksContainer">
+            <a href="https://github.com/helena1214" title="Helena's Github" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"></path>
+            </svg></a>
+
+            <a href="https://www.linkedin.com/in/wongtszkwanhelena/" title="Helena's Linkedin" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+                </svg></a>
+
+            <a href="mailto:tszkwan1214@gmail.com" title="Mail to Helena" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg></a>
+        </div>
+        <button onclick="openmenuFunction()"><svg id="menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></button>
+    </header>
+
+    <div class="bannerbox">
+        <img class="Projectheroimage" src="assests/GreenFingers/Greenfingers hero image.png">
+        <div class="banner">
+            <h1>GreenFingers</h1>
+            <p>Design an account registeration flow for a gardener social platform with responsive design.</p>
+            <a href="https://xd.adobe.com/view/6a3403d0-8f38-401c-83ce-99a4243bc7fb-3f67/?fullscreen" title="GreenFinger prototype" target="_blank">
+                <button class="PrototypeButton">Try Prototype</button></a>
+        </div>
+    </div>
+
+    <h2> PROJECT OVERVIEW </h2>
+
+            <div class="projectoverviewgrid">
+                <div class="projectoverviewbox">
+                    <img src="assests/icons/info_black_24dp.svg">
+                    <a href="./index.html#overview"><h4>Project Background</h4></a>
+                    <p>After deciding the topic, I establish my role in the project and plan for the estimated project progress.</p>
+                </div>
+
+                <div class="projectoverviewbox">
+                    <img src="assests/icons/account_circle_black_24dp.svg">
+                    <a href="./index.html#userresearch"><h4>Understanding the User</h4></a>
+                    <p>I interview serval users & understand their painpoints. Then I develop empathy map, user story & problem statement in the persona. Follow up with User Journey map.</p>
+                </div>
+
+                <div class="projectoverviewbox">
+                    <img src="assests/icons/design_services_black_24dp.svg">
+                    <a href="./index.html#ideation"><h4>Starting Design</h4></a>
+                    <p>Starting with user painpoints & improvements, I construct a site map. Then I start developing paper wireframes. Digital wireframes & low-fieldity prototype is then further develop & modify for a usability test.</p>
+                </div>
+
+                <div class="projectoverviewbox">
+                    <img src="assests/icons/tips_and_updates_black_24dp.svg">
+                    <a href="./index.html#refinedesign"><h4>Refining Design</h4></a>
+                    <p>According to the feedbacks form usbility test, I refine the design and add visual elements to produce mockup. Mockups are then converted to high-fieldity prototype.</p>
+                </div>
+            </div>
+
+            <div class="overviewintrogrid">
+            
+                <div class="overviewtextbox">
+                    <div class="iconheadingbox">
+                        <img src="assests/icons/report_problem_black_24dp.svg">
+                        <h3> Challenge </h3>
+                    </div>
+                    <ul>
+                        <li><p>Gardeners are usually not young and thus not familiar with web or mobile operations. </p></li>
+                        <li><p>They are lacking of a platform to meet with others that share same gardening interest. </p></li>
+                        <li><p>The current gardening forum focusing on socialing instead of gardening knowledge, which is inconvient to search for gardening tips.</p></li>
+                    </ul>
+                </div>
+    
+                <div class="overviewtextbox">
+                    <div class="iconheadingbox">
+                        <img src="assests/icons/task_alt_black_24dp.svg">
+                        <h3>Goal</h3>
+                    </div>
+                    <p>Design a information-based social platform, that facilate users to search with gardening tips they like, then build up relationships with people that share similar opinions.</p>
+                </div>
+    
+                <img class="overviewintroimg" src="assests/FamiDINE/unsplash_SP4WO9yDqQY.png">
+            </div>
+
+    <h2 id="userresearch">User Research</h2>
+    <div class="progressbar p25"></div>
+            
+        <div class="subheading">
+            <h3>User Empathy Map</h3>
+            <p>After interviewing with users, I constructed an empathy map by the interactions of user.</p>
+        </div>
+            <div class="imagedisplayflex"><img class="imagedisplay" src="assests/GreenFingers/GreenFingers User empathy map imageEmpathy map 2.png"></div>
+
+        <div class="subheading">
+            <h3>User Persona</h3>
+            <p>According to one of our interviewees, Mrs Wong. I built up a persona for her and established her problem statement.</p>
+        </div>
+            <div class="imagedisplayflex"><img class="imagedisplay" src="assests/GreenFingers/GreenFingers User persona image.png"></div>
+            <div class="problemstatementbox">
+                <div class="iconheadingbox">
+                    <img src="assests/icons/report_problem_black_24dp.svg">
+                    <h3>Problem statement</h3>
+                </div>
+                <p>“Mrs. Wong is a housewife interested in gardening who need a easy-to-use gardening social platform becuase she want to make friends sharing with gardening interest.”</p>
+            </div>
+
+            <div class="subheading">
+                <h3>User Journey Map</h3>
+                <p>Mapping Mrs. Wong<span>&#39</span>s user journey to understand her experiences and opportunities for our further design development.</p>
+            </div>
+                <div class="imagedisplayflex"><img class="imagedisplay" src="assests/GreenFingers/GreenFingers User Journey map image.png"></div>
+        
+                <div class="subheading">
+
+            <h3>User Painpoints</h3>
+            <p>After investigating users<span>&#39</span> experiences, I identified their painpoints.</p>
+        </div>
+            <div class="comparegrid">
+                <img class="logoimage" src="assests/icons/manage_search_black_24dp.svg">
+                <h4>Navigation</h4>
+                <p>The current gardener social platform make users confuse when searching for specific type of gardening information.</p>
+
+                <img class="logoimage" src="assests/icons/people_black_24dp.svg">
+                <h4>Socialing</h4>
+                <p>User want to have more and deeper communications with other users on the platform.</p>
+            </div>
+
+
+
+    <h2 id="ideation">Ideation & design</h2>
+    <div class="progressbar p50"></div>
+
+        <div class="subheading">
+            <h3>Site Map</h3>
+            <p>From the oppotunities & improvements from the user journey map and painpoints identified, I developed a site map for our further design pathway.</p>
+        </div>
+            <div class="imagedisplayflex"><img class="imagedisplay" src="assests/GreenFingers/GreenFingers Sitemap image.png"></div>
+
+        <div class="subheading">
+            <h3>Mainpage wireframe ideation</h3>
+            <p>I ideate 5 random front page design & pick the best part in each desgin to merge as the final design decision.</p>
+        </div>
+            <div class="imagetextdisplay">
+                <img class="imagedisplay" src="assests/GreenFingers/GreenFingers ideation image.png"></div>
+                <div class="remarktext"> The green rectangle parts indicated the sections that are going to be included in next step of design.</div>
+            </div>
+
+        <div class="subheading">
+            <h3>Paper Wireframes</h3>
+            <p> I design the main function interfaces first and ensure all the main functions are include in the design. </p>
+        </div>
+            <div class="imagedisplayflex"><img class="imagedisplay" src="assests/GreenFingers/GreenFingers paper wireframe image.png"></div>
+
+        <div class="subheading">
+            <h3>Digital Wireframes</h3>
+            <p>Keeping the key components and make sure the interface clean and easy to access. Then I developed the wireframes in Abode XD.</p>
+        </div>
+            <div class="imagedisplayflex"><img class="imagedisplay" src="assests/GreenFingers/GreenFingers digital wireframe image.png"></div>
+
+        <div class="subheading">
+            <h3>Responsive Design for mobile interfacce</h3>
+            <p>GreenFingers users may access the site on a variety of different devices, and I worked on additional screen sizes design planning for possible responsive design.</p>
+        </div>
+            <div class="overflowbox"><img class="imagedisplay" src="assests/GreenFingers/GreenFIngers Responsive mobile design wireframe scroll.png"></div>
+
+        <div class="subheading">
+            <h3>Low-fidelity prototype</h3>
+            <p>This Low-Fidelity prototype briely show the user flow from frontpage, undergoing the registeration process, and finally reaching the mainpage.</p>
+        </div>
+        <div class="imagedisplayflex"><img class="imagedisplay" src="assests/GreenFingers/GreenFingers lo-fi prototype.png"></div>
+        <!-- <div class="imagedisplayflex"><img class="imagedisplay" src="assests/GreenFingers/GreenFingers_low-fi_display_gif.gif"></div> -->
+           
+
+        <div class="subheading">
+            <h3>Usability Study Findings</h3>
+            <p>An umoderated usbility study is performed to find out screens or userflow related problems. Findings are given out for second round of modifications.</p>
+        </div>
+            <div class="comparegrid">
+                <img class="logoimage" src="assests/icons/feed_black_24dp.svg">
+                <h4>Information Architecture</h4>
+                <p>Users want to combine 2 forms into 1 form to reduce redunancy.</p>
+
+                <img class="logoimage" src="assests/icons/report_black_24dp.svg">
+                <h4>CTA button</h4>
+                <p>User want a more emphaised sign-up button.</p>
+
+                <img class="logoimage" src="assests/icons/manage_search_black_24dp.svg">
+                <h4>Navigation Bar</h4>
+                <p>“Sign-in” Option should be removed after user confirm to sign up.Mainpage functions can be included into a pull-down menu.</p>
+            </div>
+
+        
+        
+    <h2 id="refinedesign">Refining Design</h2>
+    <div class="progressbar p75"></div>
+
+        <div class="subheading">
+            <h3>Mockups</h3>
+            <p>The mockups have tackled the problems that we discoverd in the usability study and adding with visual elements.</p>
+        </div>
+
+        <div class="comparegrid">
+            <img class="webimage" src="assests/GreenFingers/GreenFingers Web Mockups CTA button image.png">
+            <h4>CTA button</h4>
+            <p>The CTA button is changed into an oval shape & with primary colour which create focal point on the frontpage.</p>
+        
+            <img class="webimage" src="assests/GreenFingers/Greenfingers Web Mockups Information architecture image.png">
+            <h4>Information Architecture</h4>
+            <p>2 forms are cominded into single from to reduce steps in the account creation flow.</p>
+        
+            <img class="webimage" src="assests/GreenFingers/GreenFingers Web Mockups Pull-down menu image.png">
+            <h4>Pull-down menu</h4>
+            <p>Mainpages functions are included in the pull down menu to make the interface simple & clear.</p>
+        </div>
+        
+        
+
+            <div class="subheading">
+                <h3>Responsive mobile interface Mockups</h3>
+                <p>In the mockup phase, I also optimize the responsive design to each screen and make fine adjustments for improving user experiences.</p>
+            </div>
+
+            <div class="carouselcontainer mobilegrid" onclick="rotate(0)">
+                <div class="carousel">
+                    <div class="carouselitem c1">
+                        <img class="interfaceimage" src="assests/GreenFingers/GreenFingers Mobile Mockups Frontpage image.png">
+                        <h4>Frontpage</h4>
+                    </div>
+                    <div class="carouselitem c2">
+                        <img class="interfaceimage" src="assests/GreenFingers/GreenFingers Mobile Mockups Sign-up form image.png">
+                        <h4>Sign-up form</h4>
+                    </div>
+                    <div class="carouselitem c3">
+                        <img class="interfaceimage" src="assests/GreenFingers/GreenFingers Mobile Mockups Mainpage image.png">
+                        <h4>Mainpage</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comparegrid mobilegrid">
+                <img class="interfaceimage" src="assests/GreenFingers/GreenFingers Mobile Mockups Frontpage image.png">
+                <h4>Frontpage</h4>
+            
+                <img class="interfaceimage" src="assests/GreenFingers/GreenFingers Mobile Mockups Sign-up form image.png">
+                <h4>Sign-up form</h4>
+            
+                <img class="interfaceimage" src="assests/GreenFingers/GreenFingers Mobile Mockups Mainpage image.png">
+                <h4>Mainpage</h4>
+            </div>
+            
+        
+        <div class="subheading">
+            <h3>High-fidelity prototype</h3>
+            <p>This High-fidelity prototype has tackled the problems that we discoverd in the usability study and adding with visual elements.</p>
+        </div>
+            <div class="imagetextdisplay">
+                <img class="imagedisplay" src="assests/GreenFingers/GreenFingers hi-fi prototype image.png">
+                <div class="remarktext">View 
+                    <a href="https://xd.adobe.com/view/6a3403d0-8f38-401c-83ce-99a4243bc7fb-3f67/?fullscreen" title="GreenFingers high-fi prototype (AbodeXD)" target="_blank">
+                        GreenFingers (high-fidelity prototype)
+                    </a>.
+                </div>
+            </div>
+    
+        
+
+    <h2>Solutions & Results</h2>
+    <div class="progressbar p95"></div>
+
+    <div class="comparegrid webgrid">
+        <img class="interfaceimage" src="assests/GreenFingers/GreenFingers Solutions Sign-up image.png">
+        <h4>Email/phone number sign up</h4>
+        <p>Alternative sign-up methods on different devices for users to choices.</p>
+
+        <img class="interfaceimage" src="assests/GreenFingers/GreenFingers Solutions Personalize image.png">
+        <h4>Select your personalities</h4>
+        <p>Personalities labels are used to recommend similar users with common interested.</p>
+
+        <img class="interfaceimage" src="assests/GreenFingers/GreenFingers Solutions Mainpage image.png">
+        <h4>Topic forum, filters & recommendations</h4>
+        <p>Search for interested informations in a fast & convient way.</p>
+    </div>
+
+
+    <aside id="sidebar">
+        <button onclick="closemenuFunction()"><svg id="close"xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+            <path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+        </svg></button>
+
+        <div class="sidebarlinks">
+            <a class="sidebaritem" href="aboutme.html">About Me</a>
+            <a id="sidebarproject" class="sidebaritem" href="index.html">Projects</a>
+            <a class="sidebarsubitem" href="project_cookbook.html">The COOKbook</a>
+            <a class="sidebarsubitem sidebarsubitemActive" href="project_greenfingers.html">GreenFingers</a>
+            <a class="sidebarsubitem" href="project_famidine.html">FamiDINE</a>
+        </div>
+
+            <div class="ApplinksContainer">
+                <a href="https://github.com/helena1214" title="Helena's Github" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"></path>
+                </svg></a>
+
+                <a href="https://www.linkedin.com/in/wongtszkwanhelena/" title="Helena's Linkedin" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+                    </svg></a>
+
+                <a href="mailto:tszkwan1214@gmail.com" title="Mail to Helena" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                        <path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg></a>
+            </div>
+    </aside>
+
+    <button onclick="topFunction()"><svg id="topbutton" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/>
+        <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
+    </svg></button>
+
+    <footer>
+        <div class="Navigationbox">
+            <a href="index.html">All Projects</a>
+            &bull;
+            <a href="project_famidine.html">FamiDINE</a>
+            &bull;
+            <a class="NavigationActive" href="project_greenfingers.html">GreenFingers</a>
+            &bull;
+            <a href="project_cookbook.html">The COOKbook</a>
+            &bull;
+            <a href="aboutme.html">About Me</a>
+        </div>
+            <p>Helena WONG  <span>&#169;</span> 2022. All rights reserved.</p>
+    </footer>
+
+<script>
+    topbutton = document.getElementById("topbutton")
+
+    window.onscroll = function() {scrollFunction(); stickFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                topbutton.style.display = "block";
+            } else {
+                topbutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.documentElement.scrollTop = 0;
+        }
+     
+
+        function openmenuFunction() {
+            document.getElementById("sidebar").style.width = "30vw";
+            document.getElementById("sidebar").style.minWidth = "150px";
+        }
+
+        function closemenuFunction() {
+            document.getElementById("sidebar").style.width = "0px";
+            document.getElementById("sidebar").style.minWidth = "0px";
+        }
+
+        var navbar = document.getElementById("header");
+        var stick = navbar.offsetTop;
+
+        function stickFunction(){
+            if (window.pageYOffset >= stick){
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    
+
+
+    var currdeg = [0,0];
+    
+    function rotate(n){
+        var carousel = document.getElementsByClassName("carousel")[n];
+        currdeg[n] = currdeg[n] + 120;
+        carousel.style.transform = `rotateY(${currdeg[n]}deg)`; 
+    }
+    
+
+    
+
+</script>
+
+
+
+</body>
+</html>
