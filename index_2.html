@@ -34,26 +34,83 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <!--Style sheet-->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="nav-brand">Helena WONG</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItems" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarItems">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="#">About me</a></li>
-                <li class="nav-item"><a href="#">Blogging</a></li>
-                <li class="nav-item">
-                    <div class="d-flex">
-                        <a href="https://github.com/helena1214" title="My Github"><i class="bi bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/wongtszkwanhelena/" title="My Linkedin"><i class="bi bi-linkedin"></i></a>
-                        <a href="mailto:tszkwan1214@gmail.com" title="Email Me"><i class="bi bi-envelope-fill"></i></a>
+<div class="container" id="mainPage">
+        <nav class="navbar navbar-expand-md navbar-light my-3">
+            <a class="nav-brand">Helena WONG</a>
+            <button class="navbar-toggler border-white" type="button" data-toggle="collapse" data-target="#navbarItems" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarItems">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#">About me</a></li>
+                    <li class="nav-item"><a href="#">Blog</a></li>
+                    <li class="nav-item">
+                        <div class="appContainer">
+                            <a href="https://github.com/helena1214" title="My Github"><i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/wongtszkwanhelena/" title="My Linkedin"><i class="bi bi-linkedin"></i></a>
+                            <a href="mailto:tszkwan1214@gmail.com" title="Email Me"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row row-cols-1 row-cols-md-2 my-5">
+
+            <a class="col" href="project_cookbook.html">
+                <div class="card border-light embed-responsive-4by3">
+                    <img src="assests/COOKbook/the COOKbook heroimage.png" class="card-img">
+                    <div class="card-img-overlay">
+                        <span class="badge badge-pill badge-primary float-right">UI/UX</span>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+                    <div class="card-body">
+                        <p class="card-text">Cross-platform (Tablet, Webapp &Website) Food-allergy recipe site</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="col" href="project_greenfingers.html"  title="Greenfingers project">
+                <div class="card border-light embed-responsive-4by3">
+                    <img src="assests/GreenFingers/Greenfingers hero image.png" class="card-img">
+                    <div class="card-img-overlay">
+                        <span class="badge badge-pill badge-primary float-right">UI/UX</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Account creation process for gardener socialing platform</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="col" href="project_famidine.html"  title="FamiDINE project">
+                <div class="card border-light embed-responsive-4by3">
+                    <img src="assests/FamiDINE/FamiDINE hero image.png" class="card-img">
+                    <div class="card-img-overlay">
+                        <span class="badge badge-pill badge-primary float-right">UI/UX</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Menu & Ordering App for a family restaurant</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="col" href="project_famidine.html"  title="FamiDINE project">
+                <div class="card border-light embed-responsive-4by3">
+                    <img src="assests/FamiDINE/FamiDINE hero image.png" class="card-img">
+                    <div class="card-img-overlay">
+                        <span class="badge badge-pill badge-info float-right">Frontend</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Frontend interaction, data vailation and transferment for a voting event.</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>        
+</div>
+    
+
 </body>
 </html>
