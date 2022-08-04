@@ -1,0 +1,26 @@
+nav a {
+  color: #535353;
+  text-decoration: none;
+}
+nav .nav-brand {
+  color: #408aa1;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+nav .nav-item {
+  margin: 0 1rem 0;
+}
+nav .appContainer > a {
+  margin: 0 0.25rem 0;
+}
+
+#mainPage a {
+  color: #535353;
+  text-decoration: none;
+}
+#mainPage .card-img {
+  height: 240px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
