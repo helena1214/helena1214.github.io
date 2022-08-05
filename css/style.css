@@ -1,3 +1,35 @@
+@-webkit-keyframes navTransitionIN {
+  from {
+    right: -100px;
+  }
+  to {
+    right: 0px;
+  }
+}
+@keyframes navTransitionIN {
+  from {
+    right: -100px;
+  }
+  to {
+    right: 0px;
+  }
+}
+@-webkit-keyframes navTransitionOUT {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -100px;
+  }
+}
+@keyframes navTransitionOUT {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -100px;
+  }
+}
 nav a {
   color: #535353;
   text-decoration: none;
@@ -12,6 +44,26 @@ nav .nav-item {
 }
 nav .appContainer > a {
   margin: 0 0.25rem 0;
+}
+nav button[aria-expanded=true] > #navbarItems.collapsing > .navbar-nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #f9f9f9;
+  -webkit-animation-name: navTransitionIN;
+          animation-name: navTransitionIN;
+  -webkit-animation-duration: 0.1s;
+          animation-duration: 0.1s;
+}
+nav button[aria-expanded=false] > #navbarItems.collapsing > .navbar-nav {
+  position: fixed;
+  right: -100px;
+  top: 0;
+  background-color: #f9f9f9;
+  -webkit-animation-name: navTransitionOUT;
+          animation-name: navTransitionOUT;
+  -webkit-animation-duration: 0.1s;
+          animation-duration: 0.1s;
 }
 
 #mainPage a {

@@ -8,7 +8,15 @@ $secondary-2-color:#4B4B4B;
     text-decoration: none;
 }
 
+@keyframes navTransitionIN{
+    from{right:-100px}
+    to{right:0px;}
+};
 
+@keyframes navTransitionOUT{
+    from{right:0px}
+    to{right:-100px;}
+};
 
 nav{
     a{@include resetLinkStyle;}
@@ -24,8 +32,37 @@ nav{
     .appContainer>a{
         margin:0 0.25rem 0;
     }
+    // #navbarItems.collapse.show>.navbar-nav{
+    //     position:fixed;
+    //     top:0;
+    //     right: 0;
+    //     background-color: #f9f9f9;
+    // }
+//     #navbarItems.collapsing>.navbar-nav{
+//         position:fixed;
+//         right: 0;
+//         top:0;
+//         background-color: #f9f9f9;
+//         animation-name: navTransitionIN;
+//         animation-duration:0.1s;
+// }
+    button[aria-expanded="true"]>#navbarItems.collapsing>.navbar-nav{
+        position:fixed;
+        right: 0;
+        top:0;
+        background-color: #f9f9f9;
+        animation-name: navTransitionIN;
+        animation-duration:0.1s;
+    }
+    button[aria-expanded="false"]>#navbarItems.collapsing>.navbar-nav{
+        position:fixed;
+        right: -100px;
+        top:0;
+        background-color: #f9f9f9;
+        animation-name: navTransitionOUT;
+        animation-duration:0.1s;
+    }
 }
-
 #mainPage{
     a{@include resetLinkStyle;}
     .card-img{
