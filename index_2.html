@@ -11,7 +11,7 @@
     <!--SEO Modification-->
     <meta property="og:title" content="Helena WONG's portfolio">
     <meta property="og:url" content="https://helena1214.github.io/">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="assests/GreenFingers/Greenfingers hero image.png">
     <meta property="og:type" content="portfolio">
 
     <!-- Webfont -->
@@ -40,7 +40,7 @@
 <div class="container" id="mainPage">
         <nav class="navbar navbar-expand-md navbar-light my-3">
             <a class="nav-brand">Helena WONG</a>
-            <button class="navbar-toggler border-white" type="button" data-toggle="collapse" data-target="#navbarItems" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-white" type="button" data-toggle="collapse" data-target="#navbarItems" aria-label="Toggle navigation" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarItems">
@@ -73,7 +73,7 @@
             </a>
 
             <a class="col" href="project_greenfingers.html"  title="Greenfingers project">
-                <div class="card border-light embed-responsive-4by3">
+                <div class="card border-light">
                     <img src="assests/GreenFingers/Greenfingers hero image.png" class="card-img">
                     <div class="card-img-overlay">
                         <span class="badge badge-pill badge-primary float-right">UI/UX</span>
@@ -85,7 +85,7 @@
             </a>
 
             <a class="col" href="project_famidine.html"  title="FamiDINE project">
-                <div class="card border-light embed-responsive-4by3">
+                <div class="card border-light">
                     <img src="assests/FamiDINE/FamiDINE hero image.png" class="card-img">
                     <div class="card-img-overlay">
                         <span class="badge badge-pill badge-primary float-right">UI/UX</span>
@@ -97,7 +97,7 @@
             </a>
 
             <a class="col" href="project_famidine.html"  title="FamiDINE project">
-                <div class="card border-light embed-responsive-4by3">
+                <div class="card border-light">
                     <img src="assests/FamiDINE/FamiDINE hero image.png" class="card-img">
                     <div class="card-img-overlay">
                         <span class="badge badge-pill badge-info float-right">Frontend</span>
@@ -110,7 +110,17 @@
 
         </div>        
 </div>
-    
-
 </body>
+
+<script>
+    const menuBtn = document.querySelector(".navbar-toggler");
+    const navBar = document.querySelector(".navbar-collapse");
+    menuBtn.addEventListener("click",function(){
+        if(menuBtn.getAttribute("aria-expanded")){
+            navBar.classList.remove("expanded-bar");
+        }else{
+            navBar.classList.adds("expanded-bar");
+        }
+    })
+</script>
 </html>
